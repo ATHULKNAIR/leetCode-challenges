@@ -17,7 +17,6 @@
 // Output: null
 // Explanation: After calling your function, the input array is modified to: [1,2,3]
 
-
 var duplicateZeros = function(arr) {
     let len = arr.length;
     for(let i=0;i<arr.length-1;i++){
