@@ -36,6 +36,11 @@ function lengthOfLongestSubstring(s: string): number {
     return max;
 };
 
+// Push the strings to an array,
+// calculate max of max and length of array
+// if current char is present in array, find index
+// remove (splice) all index from 0 to index+1. ( make array.length=0 )
+
 // Time complexity O(N)
 function lengthOfLongestSubstring(s: string): number {
     let max = 0;
