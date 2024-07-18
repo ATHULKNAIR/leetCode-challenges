@@ -19,6 +19,10 @@
 // Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
 // Output: [8,9,9,9,0,0,0,1]
 
+// since linkedList, 
+// add l1 and l2 value if presnt, 
+// create a new LinkedList with node value as total value and next as recursion of next nodes of l1 and l2
+
 function addTwoNumbers(l1: ListNode | null, l2: ListNode | null, carry: number = 0): ListNode | null {
     if (!l1 && !l2 && !carry) return null;
     const total: number = (l1 ? l1.val : 0) + (l2 ? l2.val : 0) + (carry || 0);
